@@ -20,4 +20,3 @@ def minOperations(n):
     if n > 1:
         operations += n
     return operations
-EOF

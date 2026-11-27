@@ -1,17 +1,23 @@
 
 #!/usr/bin/python3
-"""Calculate rainwater retained between walls."""
+"""
+Calculate the amount of rainwater retained between walls.
+"""
 
 
 def rain(walls):
-    """Return the total amount of rainwater retained."""
+    """
+    Calculate how many square units of water can be retained.
+    """
     if not walls:
         return 0
 
     left = 0
     right = len(walls) - 1
+
     left_max = 0
     right_max = 0
+
     total_water = 0
 
     while left < right:
